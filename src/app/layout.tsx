@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import { Header } from "./_components/Header";
 import { cn } from "../lib/utils";
+import { Footer } from "./_components/Footer";
 
 const inter = Roboto({
   subsets: ["latin"],
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body className={cn(inter.className, "bg-bg-default")}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
